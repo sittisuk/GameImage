@@ -1,0 +1,29 @@
+#navigation {
+    top: 110px;
+}
+
+.formModedidAnswer {
+    margin-top: 340px;
+}
+
+.dragdrop {
+    position: absolute;
+}
+
+.dragdrop,
+.dragdrop img {
+    width: 100px;
+    height: 100px;
+}
+
+.puzzleback {
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    height: 38px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE>
+    <html>
+    <head>
+        <title>เกมต่อภาพ LV2</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" id="vp" content="user-scalable=yes,width=device-width"/>
+        <link rel="stylesheet" href="../level2/new.css" />
+        <link rel="stylesheet" href="../level2/style.css"  />
+
+        <script src="../level2/timeout.js"></script>
+        <script src="../level2/modify.js"></script>
+        <script src="../help/helps.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body onload="setTimeLimit(160);decreaseCounter('เวลา');">
+
+    <div class="all" id="all">
+      <div id="counter">&nbsp;</div>
+      <div class="page">
+        <h1>เกมต่อภาพ LV2</h1>
+        <div class="content">
+          <div class="puzzleback">
+            <img src="../image/Lv2.JPG"/>
+          </div>
+          <div class="dragdrop" id="tile1" style="left: 551px; top:147px"><img src="../image/LV2/img_G/G1.png" alt="" /></div>
+          <div class="dragdrop" id="tile2" style="left: 604px; top:317px"><img src="../image/LV2/img_G/G2.png" alt="" /></div>
+          <div class="dragdrop" id="tile3" style="left: 706px; top:489px"><img src="../image/LV2/img_G/G3.png" alt="" /></div>
+          <div class="dragdrop" id="tile4" style="left: 525px; top:244px"><img src="../image/LV2/img_G/G4.png" alt="" /></div>
+          <div class="dragdrop" id="tile5" style="left: 591px; top:383px"><img src="../image/LV2/img_G/G5.png" alt="" /></div>
+          <div class="dragdrop" id="tile6" style="left: 699px; top:62px"><img src="../image/LV2/img_G/G6.png" alt="" /></div>
+          <div class="dragdrop" id="tile7" style="left: 707px; top:319px"><img src="../image/LV2/img_G/G7.png" alt="" /></div>
+          <div class="dragdrop" id="tile8" style="left: 592px; top:460px"><img src="../image/LV2/img_G/G8.png" alt="" /></div>
+          <div class="dragdrop" id="tile9" style="left: 569px; top:47px"><img src="../image/LV2/img_G/G9.png" alt="" /></div>
+          <div class="dragdrop" id="tile10" style="left: 610px; top:219px"><img src="../image/LV2/img_G/G10.png" alt="" /></div>
+          <div class="dragdrop" id="tile11" style="left: 651px; top:147px"><img src="../image/LV2/img_G/G11.png" alt="" /></div>
+          <div class="dragdrop" id="tile12" style="left: 704px; top:317px"><img src="../image/LV2/img_G/G12.png" alt="" /></div>
+          <div class="dragdrop" id="tile13" style="left: 806px; top:489px"><img src="../image/LV2/img_G/G13.png" alt="" /></div>
+          <div class="dragdrop" id="tile14" style="left: 625px; top:244px"><img src="../image/LV2/img_G/G14.png" alt="" /></div>
+          <div class="dragdrop" id="tile15" style="left: 691px; top:383px"><img src="../image/LV2/img_G/G15.png" alt="" /></div>
+          <div class="dragdrop" id="tile16" style="left: 799px; top:62px"><img src="../image/LV2/img_G/G16.png" alt="" /></div>
+          <div class="dragdrop" id="tile17" style="left: 807px; top:319px"><img src="../image/LV2/img_G/G17.png" alt="" /></div>
+          <div class="dragdrop" id="tile18" style="left: 692px; top:460px"><img src="../image/LV2/img_G/G18.png" alt="" /></div>
+          <div class="dragdrop" id="tile19" style="left: 669px; top:47px"><img src="../image/LV2/img_G/G19.png" alt="" /></div>
+          <div class="dragdrop" id="tile20" style="left: 710px; top:219px"><img src="../image/LV2/img_G/G20.png" alt="" /></div>
+          <form name="mainForm" action="./" method="post" class="formModedidAnswer">
+            <div>
+              <input type="hidden" name="guess" id="guess" />
+              <input type="hidden" name="set" id="set" value="" />
+              <input type="hidden" name="guess1" id="guess1" />
+              <input type="hidden" name="guess2" id="guess2" />
+              <input type="hidden" name="guess3" id="guess3" />
+              <input type="hidden" name="guess4" id="guess4" />
+              <input type="hidden" name="guess5" id="guess5" />
+              <input type="hidden" name="guess6" id="guess6" />
+              <input type="hidden" name="guess7" id="guess7" />
+              <input type="hidden" name="guess8" id="guess8" />
+              <input type="hidden" name="guess9" id="guess9" />
+              <input type="hidden" name="guess10" id="guess10" />
+              <input type="hidden" name="guess11" id="guess11" />
+              <input type="hidden" name="guess12" id="guess12" />
+              <input type="hidden" name="guess13" id="guess13" />
+              <input type="hidden" name="guess14" id="guess14" />
+              <input type="hidden" name="guess15" id="guess15" />
+              <input type="hidden" name="guess16" id="guess16" />
+              <input type="hidden" name="guess17" id="guess17" />
+              <input type="hidden" name="guess18" id="guess18" />
+              <input type="hidden" name="guess19" id="guess19" />
+              <input type="hidden" name="guess20" id="guess20" />
+              <input type="hidden" name="mode" value="lev3" />
+              <input type="hidden" name="score" value="0" />
+              <button type="button" onclick="backreturnlev2();" style="margin-top: 6.5rem;">ภาพต่อไป</button>
+              <div id="dialog" title="แสดงความยินดี">
+                <p>ยินดีด้วยคุณผ่าน level 2 แล้ว กดที่ปุ่มเพื่อเปลี่ยนด่าน</p>
+                <button id="next">กดเพื่อเปลี่ยนด่าน</button>
+              </div>
+            </div>
+          </form>
+
+          <script>
+            $( "#dialog" ).hide();
+            $("#next").click(function(){
+              window.location.href = "../lev2/level2_1.html";
+            })
+            SET_DHTML(  "tile1", "tile2", "tile3", "tile4", "tile5", "tile6", "tile7", "tile8", "tile9", "tile10",  "tile11", "tile12", "tile13", "tile14", "tile15", "tile16", "tile17", "tile18", "tile19", "tile20"  );
+          </script>
+
+          <p class="instructions">ลากและวางรูปภาพเพื่อสร้างรูปที่ถูกต้อง</p>
+          <img id="img" src="../image/LV2/img_A/mainA.JPG"/>
+        </div>
+        <div class="score">เวลา                    </div>
+        <div id="counterwrap" onclick="misc_toggleTimer()" title="Pause timer">
+          <div id="counterbar">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
